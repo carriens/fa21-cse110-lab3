@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>CSE 110 HTML Practice</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    </head>
+    <body>
+        
+        <header>
+            <h1>EXAMPLE MEETING MINUTES</h1>
+            <h2>scribe: Cade Arriens</h2>
+            <h3>3/10/2021</h3>
+            <ul>
+                <li>Cade: present</li>
+                <li>Other Guy: not present</li>
+                <li>Girl: present</li>
+                <li>Other Girl : not present</li>
+            </ul>
+            
+            
+        </header>
+
+        <h4>Todays Goal: finish the homework</h4>
+        <ol>
+            <li>Type problem 3</li>
+            <li>Start Problem 4</li>
+        </ol>
+
+        <main>
+            <section>
+                <h5>Last Time</h5>
+                <p>
+                    As we discussed yesterday, problem 3 presents a bit of a challenge.  Because it is so open-ended, how we design our graph to represent the maze can drastically change our <b>graphsearch</b> algorithm.  We should keep things simple.  I asked on piazza, like we discussed, about how to move from the given matrix to a graph and the TA said a <strong>high-level</strong> description is allowed.  <a href="https://en.wikipedia.org/wiki/Graph">Here</a> is the link to the wiki we were looking at.
+                </p>
+
+            </section>
+            <hr>
+           <section>
+            <p>
+                If we design the graph as discussed, with that gigantic sparse matrix, it becomes much more difficult to search than nessesary.  However, if each square is considered a vertex and every <i>not black</i> square adjacent to it is also a vertex, allowable steps from square to square can be <em>undirected</em> edges.  Undirected is important because if perhaps graphsearch leads us down a dead end, we should be able to traverse back and resume. Visualization here. . . 
+                <img controls src="images/directed_vs_undirected.png"
+                    alt="directed vs undirected">
+                <br>  Simple is good. <br>
+                Whiteboard video below with seperate audio
+                <figure>
+                    <video autoplay controls width="250">
+                        <source src="/IMG_4993.MOV" type="video/mov"> watch
+                    </video>
+                </figure>
+                <figure>
+                    <audio controls src="example_whitboard_audio.mp3"> Listen Here</audio>
+                </figure>
+                
+
+
+            </p>
+           </section>
+        </main>
+
+        <nav>
+            
+        </nav>
+
+
+        <footer>Created By Cade Arriens</footer>
+    </body>
+</html>
