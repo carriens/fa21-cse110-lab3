@@ -6,6 +6,10 @@
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="./style.css">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     </head>
     <style>
         h1 {
@@ -15,24 +19,27 @@
     <body>
         
         <header>
-            <h1>EXAMPLE MEETING MINUTES</h1>
-            <h2>scribe: Cade Arriens</h2>
+            <h1 class="title">EXAMPLE MEETING MINUTES</h1>
+            <h2 style="color:rgb(201, 39, 179)" >scribe: Cade Arriens</h2>
             <h3>3/10/2021</h3>
             <ul>
                 <li>Cade: present</li>
-                <li>Other Guy: not present</li>
                 <li>Girl: present</li>
+                <li>Other Guy: not present</li>
                 <li>Other Girl : not present</li>
             </ul>
             
             
         </header>
 
-        <h4>Todays Goal: finish the homework</h4>
+        
+        <h4 class="Goals">Todays Goal: finish the homework</h4>
         <ol>
             <li>Type problem 3</li>
             <li>Start Problem 4</li>
         </ol>
+        
+
 
         <main>
             <section>
@@ -52,23 +59,29 @@
                     Homework due soon
                 </details>
             
-            <img class="dvd" src="images/directed_vs_undirected.png"
-            alt="directed vs undirected">
-            
-            
-            <br>  Simple is good. <br>
-            Whiteboard video below with seperate audio
-                
-            <figure>
-                <audio controls src="example_whitboard_audio.mp3"> Listen Here</audio>
-            </figure>
-                
-            <video controls width="250">
+            <img class="dvd-img" src="images/directed_vs_undirected.png"
+            alt="directed vs undirected"> 
+
+            <video class="video" controls width="250">
                 <source src="video_perhaps.mp4" type="video/mp4">
                 <source src="IMG_4993.MOV" type="video/mov">
                 
                 It's not working
             </video>
+
+            <br>
+            
+            
+            <div class="Simple">  
+                Simple is good. 
+            </div>
+
+            <br>
+            Whiteboard video above with seperate audio below.
+                
+            <figure>
+                <audio controls src="example_whitboard_audio.mp3"> Listen Here</audio>
+            </figure>
 
 
             
@@ -80,7 +93,7 @@
             <fieldset>
                 <legend> Choose next meeting date</legend>
                 <input type="radio" id="Monday" name="Monday">
-                <label for="Monday">Monday</label><br>
+                <label for="Monday">Monday(Its your only choice lol)</label><br>
 
                 <input type="checkbox" id="Attest" name="Attest">
                 <label for="Attest">I promise I will be there</label><br>
@@ -105,27 +118,32 @@
         <label for="ice-cream-choice">Choose a favorite subject:</label>
         <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
 
-        <datalist id="ice-cream-flavors">
-            <option value="British Literature">
-            <option value="Discrete Math">
-            <option value="Calculus">
-            <option value="Computer Science">
-        </datalist><br>
+        <element class="Field1">
+            <datalist id="ice-cream-flavors">
+                <option value="British Literature">
+                <option value="Discrete Math">
+                <option value="Calculus">
+                <option value="Computer Science">
+            </datalist>
+        </element>
+        
 
-        <label for="select">Choose a favorite game:</label>
+        <element class="Field2">
+            <label for="select">Choose a favorite game:</label>
 
-        <select name="game" id="select">
-            <option value="">--Please choose an option--</option>
-            <option value="COD">COD</option>
-            <option value="Red Dead">Red Dead</option>
-            <option value="Stardew Valley">Stardew Valley</option>
-        </select>
+            <select name="game" id="select">
+                <option value="">--Please choose an option--</option>
+                <option value="COD">COD</option>
+                <option value="Red Dead">Red Dead</option>
+                <option value="Stardew Valley">Stardew Valley</option>
+            </select>
+        </element>
 
-        <br>
-
-        <button class="favorite styled" type="button">
-            That was easy!
-        </button>
+        <element class="Field3">
+            <button class="favorite styled" type="button">
+                That was easy!
+            </button>
+        </element>
 
         <nav>
             
