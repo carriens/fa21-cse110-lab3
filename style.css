@@ -1,7 +1,7 @@
 /*this is a comment*/
 
 body {
-    background-color: #E9EAEC;
+    background-color: #90ADC6;
 }
 
 .dvd-img {
@@ -62,7 +62,7 @@ button:active {
     color: #FAD02C
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 50px) {
     body {
         background-color: white;
     }
@@ -97,8 +97,8 @@ h5 ~ p {
     color: black;
 }
 
-li + li {
-    color: darkolivegreen;
+li + li + li {
+    color: red;
 }
 
 h1.title {
@@ -116,6 +116,10 @@ fieldset {
 fieldset > label {
     display: flex;
     align-items:start;
+}
+
+details > summary {
+    color: #FAD02C;
 }
 
 
